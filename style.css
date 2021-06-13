@@ -88,3 +88,18 @@ img {
 .border-red {
   border-bottom: 1px solid dimgrey;
 }
+
+.indented {
+  padding-left: 10pt;
+  padding-right: 10pt;
+}
+
+.icon {
+  background: url('./img/wa.png');
+  height: 5%;
+  width: 5%;
+  display: inline-block;
+  padding-right: 30px;
+
+  /* Other styles here */
+}
