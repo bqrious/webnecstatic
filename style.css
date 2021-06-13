@@ -103,3 +103,19 @@ img {
 
   /* Other styles here */
 }
+
+.rowp {
+  display: flex;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.columnp {
+  flex: 100%;
+  padding: 0 4px;
+}
+
+.columnp img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
