@@ -1,8 +1,5 @@
-# Frontend Bootcamp Website - Bootstrap 5
+# necessity static Website - Bootstrap 5
 
-> Simple one page website for a fake bootcamp
+> Simple one page website for necessity
 
-This is part of a [YouTube tutorial](https://www.youtube.com/watch?v=4sosXZsdy-s&t=186s)
-
-### Website Demo
-https://www.frontendbootcampdemo.com/
+This is part of a 
