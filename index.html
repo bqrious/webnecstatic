@@ -125,9 +125,7 @@
                     <p>
                         HTML, JavaScript, .NET, C#, Webb App, NodeJS, React, Golang, Mobile, Desktops
                     </p>
-                    <a href="#" class="btn btn-light mt-3">
-                        <i class="bi bi-chevron-right"></i> Read More
-                    </a>
+                    <button class="btn btn-dark mt-3" data-bs-toggle="modal" data-bs-target="#codingModal"> <i class="bi bi-chevron-right"></i>Read More</button>
                 </div>
             </div>
         </div>
@@ -143,9 +141,7 @@
                     <p>
                         Cisco, Microsoft, Linuxes, Project Management, Agile, and The Clouds
                     </p>
-                    <a href="#" class="btn btn-light mt-3">
-                        <i class="bi bi-chevron-right"></i> Read More
-                    </a>
+                    <button class="btn btn-light mt-3" data-bs-toggle="modal" data-bs-target="#infraModal"> <i class="bi bi-chevron-right"></i>Read More</button>
                 </div>
                 <div class="col-md">
                     <img src="img/react.svg" class="img-fluid w-100" alt="" />
@@ -157,7 +153,7 @@
     <section class="bg-primary text-light p-5">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                                    <h2>Supporting</h2>
+                <h2>Supporting</h2>
                 <div class="col-md">
                     <img src="img/logo8.png" class="img-fluid w-100" alt="" />
                 </div>
@@ -189,20 +185,20 @@
                     <h2 class="text-center mb-4">Contact Info</h2>
                     <ul class="list-group list-group-flush lead">
                         <li class="list-group-item">
-                            <span class="fw-bold">Main Location:</span> Aruba Residence C42, Jalan Pemuda Depok
+                            <span class="fw-bold">Main Location:</span><a style="padding-right: 10px;" href="https://goo.gl/maps/qY1SqD8BjQsMBsg38"> Aruba Residence C42, Jalan Pemuda Depok</a>
                         </li>
                         <li class="list-group-item">
-                            <span class="fw-bold"><a href="https://wa.me/089662234466">Main Line:</a></span> <a href="https://wa.me/089662234466">+6289662234466</a>
+                            <span class="fw-bold">Main Line:</span> <a href="https://wa.me/089662234466">+6289662234466</a>
                         </li>
                         <li class="list-group-item">
-                            <span class="fw-bold">Admin Line:</span></span> <a style="padding-right: 10px;" href="http://wa.me/089662234466">+6289662234466</a><span class="icon">.</span>
+                            <span class="fw-bold">Admin Line:</span><a style="padding-right: 10px;" href="http://wa.me/089662234466">+6289662234466</a><span class="icon">.</span>
                         </li>
                         <li class="list-group-item">
-                            <span class="fw-bold">Sales Email:</span> sales@necessity.click
+                            <span class="fw-bold">Sales Email:</span> <a href="#" data-bs-toggle="modal" data-bs-target="#salesModal">sales@necessity.click</a>
                         </li>
                         <li class="list-group-item">
-                            <span class="fw-bold">Support Email:</span>
-                            techsupport@necessity.click
+                            <span class="fw-bold">Support Email:</span> <a href="#" data-bs-toggle="modal" data-bs-target="#techModal">
+                                techsupport@necessity.click</a>
                         </li>
                     </ul>
                 </div>
@@ -248,10 +244,6 @@
                             <fieldset class="pure-group">
                                 <label for="phone"><em>Your</em> phone:</label>
                                 <input class="form-control" id="phone" name="phone" type="phone" value="" required placeholder="your phone with country code" />
-                            </fieldset>
-                            <fieldset class="pure-group">
-                                <label for="color">Favourite Color: </label>
-                                <input class="form-control" id="color" name="color" placeholder="green" />
                             </fieldset>
                             <fieldset class="pure-group honeypot-field">
                                 <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
@@ -455,41 +447,220 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="enrolx" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+    <div class="modal fade" id="codingModal" tabindex="-1" aria-labelledby="codingLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="enrollLabel">Enrollment</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="codingLabel">Contact Us to get you skilled in coding</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="refFunction()" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p class="lead">Fill out this form and we will get back to you</p>
-                    <form>
-                        <div class="mb-3">
-                            <label for="first-name" class="col-form-label">
-                                First Name:
-                            </label>
-                            <input type="text" class="form-control" id="first-name" />
+                    <div class="indented">
+                        <h2>We facilitate you to code on your own</h2>
+                        <p>Mobile (Android, iOS) and Web Apps</p>
+                        <ul>
+                            <li>On-Premise</li>
+                            <li>Applications on Clouds (AWS, Azure, Google Cloud)</li>
+                        </ul>
+                        <p>Desktops</p>
+                        <ul>
+                            <li>On-Premise</li>
+                        </ul>
+                        <p>Arrangement can be made in groups, one-to-one, virtual (online), and whenever possible offline</p>
+                    </div>
+                    <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbys_ffz0e8eupYsUTTPoDmIoJoqA1I1fFMCdIdnfkU_aNWnhEBI/exec">
+                        <!-- change the form action to your script url -->
+                        <div class="form-elements mb-3">
+                            <fieldset class="pure-group">
+                                <label for="name" class="col-form-label">Name: </label>
+                                <input class="form-control" id="name" name="name" placeholder="What your Mom calls you" />
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <label for="message">Message: </label>
+                                <textarea class="form-control" id="message" name="message" rows="10" placeholder="Tell us what's on your mind..."></textarea>
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <label for="email"><em>Your</em> Email Address:</label>
+                                <input class="form-control" id="email" name="email" type="email" value="" required placeholder="your.name@email.com" />
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <label for="phone"><em>Your</em> phone:</label>
+                                <input class="form-control" id="phone" name="phone" type="phone" value="" required placeholder="your phone with country code" />
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <input class="form-control" id="serviceType" name="serviceType" value="coding" type="hidden" />
+                            </fieldset>
+                            <fieldset class="pure-group honeypot-field">
+                                <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+                                <input id="honeypot" type="text" name="honeypot" value="" />
+                            </fieldset>
+                            <div style="text-align: right;;">
+                                <button type="button" class="btn btn-secondary btn-margin-top" data-bs-dismiss="modal">Close</button>
+                                <button class="pure-button btn btn-primary btn-margin-top">
+                                    <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="last-name" class="col-form-label">Last Name:</label>
-                            <input type="text" class="form-control" id="last-name" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="col-form-label">Email:</label>
-                            <input type="email" class="form-control" id="email" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="phone" class="col-form-label">Phone:</label>
-                            <input type="tel" class="form-control" id="phone" />
+                        <div class="thankyou_message" style="display:none;">
+                            <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
                         </div>
                     </form>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                        Close
-                    </button>
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="infraModal" tabindex="-1" aria-labelledby="servmanLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="servmanLabel">Contact Us to prepare you for managing your infrastructure</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="refFunction()" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="indented">
+                        <h2>We prepare you for advanced skillset in infrastructure</h2>
+                        <p>On-Premise</p>
+                        <ul>
+                            <li>Servers, Networks, Security, Voice, End-points</li>
+                        </ul>
+                        <p>Clouds</p>
+                        <ul>
+                            <li>AWS, Azure, Google Clouds</li>
+                        </ul>
+                    </div>
+                    <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbys_ffz0e8eupYsUTTPoDmIoJoqA1I1fFMCdIdnfkU_aNWnhEBI/exec">
+                        <!-- change the form action to your script url -->
+                        <div class="form-elements mb-3">
+                            <fieldset class="pure-group">
+                                <label for="name" class="col-form-label">Name: </label>
+                                <input class="form-control" id="name" name="name" placeholder="What your Mom calls you" />
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <label for="message">Message: </label>
+                                <textarea class="form-control" id="message" name="message" rows="10" placeholder="Tell us what's on your mind..."></textarea>
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <label for="email"><em>Your</em> Email Address:</label>
+                                <input class="form-control" id="email" name="email" type="email" value="" required placeholder="your.name@email.com" />
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <label for="phone"><em>Your</em> phone:</label>
+                                <input class="form-control" id="phone" name="phone" type="phone" value="" required placeholder="your phone with country code" />
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <input class="form-control" id="serviceType" name="serviceType" value="infra" type="hidden" />
+                            </fieldset>
+                            <fieldset class="pure-group honeypot-field">
+                                <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+                                <input id="honeypot" type="text" name="honeypot" value="" />
+                            </fieldset>
+                            <div style="text-align: right;;">
+                                <button type="button" class="btn btn-secondary btn-margin-top" data-bs-dismiss="modal">Close</button>
+                                <button class="pure-button btn btn-primary btn-margin-top">
+                                    <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+                            </div>
+                        </div>
+                        <div class="thankyou_message" style="display:none;">
+                            <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="salesModal" tabindex="-1" aria-labelledby="servmanLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="servmanLabel">Sales Enquiry</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="refFunction()" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbys_ffz0e8eupYsUTTPoDmIoJoqA1I1fFMCdIdnfkU_aNWnhEBI/exec">
+                        <!-- change the form action to your script url -->
+                        <div class="form-elements mb-3">
+                            <fieldset disabled class="pure-group">
+                                <label for="message">To: </label>
+                                <input class="form-control" id="serviceType" name="serviceType" value="sales" />
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <label for="name" class="col-form-label">Name: </label>
+                                <input class="form-control" id="name" name="name" placeholder="What your Mom calls you" />
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <label for="message">Message: </label>
+                                <textarea class="form-control" id="message" name="message" rows="10" placeholder="Tell us what's on your mind..."></textarea>
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <label for="email"><em>Your</em> Email Address:</label>
+                                <input class="form-control" id="email" name="email" type="email" value="" required placeholder="your.name@email.com" />
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <label for="phone"><em>Your</em> phone:</label>
+                                <input class="form-control" id="phone" name="phone" type="phone" value="" required placeholder="your phone with country code" />
+                            </fieldset>
+                            <fieldset class="pure-group honeypot-field">
+                                <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+                                <input id="honeypot" type="text" name="honeypot" value="" />
+                            </fieldset>
+                            <div style="text-align: right;;">
+                                <button type="button" class="btn btn-secondary btn-margin-top" data-bs-dismiss="modal">Close</button>
+                                <button class="pure-button btn btn-primary btn-margin-top">
+                                    <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+                            </div>
+                        </div>
+                        <div class="thankyou_message" style="display:none;">
+                            <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="techModal" tabindex="-1" aria-labelledby="techLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="techLabel">Technical Support Assistance</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="refFunction()" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbys_ffz0e8eupYsUTTPoDmIoJoqA1I1fFMCdIdnfkU_aNWnhEBI/exec">
+                        <!-- change the form action to your script url -->
+                        <div class="form-elements mb-3">
+                            <fieldset disabled class="pure-group">
+                                <label for="message">To: </label>
+                                <input class="form-control" id="serviceType" name="serviceType" value="techsupport"/>
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <label for="name" class="col-form-label">Name: </label>
+                                <input class="form-control" id="name" name="name" placeholder="What your Mom calls you" />
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <label for="message">Message: </label>
+                                <textarea class="form-control" id="message" name="message" rows="10" placeholder="Tell us what's on your mind..."></textarea>
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <label for="email"><em>Your</em> Email Address:</label>
+                                <input class="form-control" id="email" name="email" type="email" value="" required placeholder="your.name@email.com" />
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <label for="phone"><em>Your</em> phone:</label>
+                                <input class="form-control" id="phone" name="phone" type="phone" value="" required placeholder="your phone with country code" />
+                            </fieldset>
+                            <fieldset class="pure-group honeypot-field">
+                                <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+                                <input id="honeypot" type="text" name="honeypot" value="" />
+                            </fieldset>
+                            <div style="text-align: right;;">
+                                <button type="button" class="btn btn-secondary btn-margin-top" data-bs-dismiss="modal">Close</button>
+                                <button class="pure-button btn btn-primary btn-margin-top">
+                                    <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+                            </div>
+                        </div>
+                        <div class="thankyou_message" style="display:none;">
+                            <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -541,30 +712,44 @@
         </div>
     </div>
     <script>
-    function refFunction() {
-        window.location.reload()
-    }
-
-    function myFunction2() {
-
-        $("#contactModal").modal('dispose');
-
-
-    }
+            function refFunction() {window.location.reload()}
+            function myFunction2() {$("#contactModal").modal('dispose');}
     </script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
     <script>
-    mapboxgl.accessToken =
-        'pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw'
-    var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center: [106.82455, -6.40460],
-        zoom: 16,
-    })
+            mapboxgl.accessToken ='pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw'
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11',
+                center: [106.82455, -6.40460],
+                zoom: 16,
+            })
     </script>
     <!-- Submit the Form to Google Using "AJAX" -->
     <script data-cfasync="false" src="form-submission-handler.js"></script>
+    <!-- Getting Data from Modal -->
+     <script type="text/javascript">
+        function getContactInfo(){
+        var contactModal = document.getElementById('contactModal')
+        contactModal.addEventListener('show.bs.modal', function(event) {
+        // Button that triggered the modal
+        var button = event.relatedTarget
+        // Extract info from data-bs-* attributes
+        var recipient = button.getAttribute('data-bs-whatever')
+        // If necessary, you could initiate an AJAX request here
+        // and then do the updating in a callback.
+        //
+        // Update the modal's content.
+        var modalTitle = exampleModal.querySelector('.modal-title')
+        var modalBodyInput = exampleModal.querySelector('.modal-body input')
+        var modalName = contactModal.querySelector('#name')
+
+        modalTitle.textContent = 'New message to ' + recipient
+        modalBodyInput.value = "hidayat"
+        modalBodyText.value = 'hi'
+    })
+}
+    </script>
 </body>
 
 </html>
