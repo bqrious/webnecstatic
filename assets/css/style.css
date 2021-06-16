@@ -432,6 +432,15 @@ a:hover {
   font-size: 1.2rem;
 }
 
+.button-biga {
+  padding: .9rem 2.3rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  background-color: #0078ff;
+  color: #fff;
+  border-color: #cde1f8;
+}
+
 .button-rouded {
   border-radius: 5rem;
 }
