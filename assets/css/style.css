@@ -1529,12 +1529,22 @@ footer .credits a {
 
 }
 
+.top-bar .social-list li a {
+  font-size: 14px;
+    letter-spacing: 1px;
+  display: inline-block;
+  line-height: 15px;
+    color:  slategray;
+     padding: 5px 5px;
+
+}
+
 
 /* Top Bar Social */
 
 ul.social-list li {
-    float: right;
-    border-left: 1px solid #f2f2f2;
+    float: left;
+    border-left: 0px solid #f2f2f2;
 }
 
 ul.social-list li a {
@@ -1546,7 +1556,7 @@ ul.social-list li a {
 }
 
 ul.social-list li:first-child {
-    border-right: 1px solid #f2f2f2;
+    border-right: 0px solid #f2f2f2;
 }
 
 ul.social-list li a:hover{
