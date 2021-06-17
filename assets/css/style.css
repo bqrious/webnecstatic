@@ -1545,6 +1545,7 @@ footer .credits a {
 ul.social-list li {
     float: left;
     border-left: 0px solid #f2f2f2;
+    list-style-type: none;
 }
 
 ul.social-list li a {
@@ -1622,3 +1623,6 @@ ul.social-list li a:hover i {
   }
 }
 
+.honeypot-field {
+  display: none;
+}
